@@ -1,6 +1,5 @@
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
-// import NavLogo from '../public/assets/navLogo.svg'
 
 const Navbar = () => {
   const [shadow, setShadow] = useState(false);
@@ -58,12 +57,11 @@ const Navbar = () => {
               <Link href="/#contact">Contact</Link>
             </li>
           </ul>
-          {/* Hamburger Icon */}
+      
         </div>
       </div>
 
-      {/* Mobile Menu */}
-      {/* Overlay */}
+    
     </div>
   );
 };
