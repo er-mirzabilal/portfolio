@@ -8,30 +8,180 @@
 html {
   scroll-behavior: smooth;
   font-family: 'Poppins', sans-serif;
+  max-width: 1800px;
 }
 
 @layer base {
   body {
-    @apply bg-[#ecf0f3] text-[#1f2937] tracking-wide
+    @apply bg-[#0A1930] text-[#ffff] 
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-bold
-  }
 
-  h1 {
-    @apply text-4xl sm:text-5xl md:text-6xl font-[Raleway]
-  }
+ 
 
+b{
+  @apply text-[#ffff] 
+}
+ h1 {
+  @apply text-8xl  py-2 font-bold text-[#F0F0F0]
+}
   h2 {
-    @apply text-3xl sm:text-4xl
+    @apply text-4xl    text-[#02CA82]   font-bold   py-2
   }
-  
+  h5{
+    @apply  text-2xl  font-normal  py-2
+  }
+  h6 {
+    @apply text-[#02CA82]  text-xl  font-bold
+  }
   li {
     @apply cursor-pointer
   }
 
-  button {
-    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white
-  }
+  /* button {
+    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff]  text-[#02CA82]
+  } */
 }
+/* main component */
+
+.dot {
+  
+  height: 15px;
+  width: 15px;
+  background-color: #02CA82;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 8px;
+}
+
+.contact-button {
+  color: green;
+  background-color: transparent;
+  border: 1px solid green;
+  border-radius: var(--border-radius);
+  padding: 0.75rem 1.5rem;
+
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+
+  margin-left: 30px;
+  margin-top: -10px;
+  text-transform: lowercase;
+  font-weight: bold;
+  
+}
+.resume-button {
+  color: green;
+  background-color: transparent;
+  border: 1px solid green;
+  border-radius: var(--border-radius);
+  padding: 0.75rem 2.5rem;
+
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+
+ 
+  margin-top: 40px;
+  
+  font-weight: 600;
+  
+}
+
+
+
+
+.descrption{
+  
+  @apply
+   border-l-4
+   border-[#02CA82]
+
+
+}
+svg{
+  width: 20px;
+
+}
+
+.left-line-mainpage{
+ 
+
+
+
+position: absolute;
+width: 93px;
+height: 1px;
+/* left: 40.91px; */
+top: 770.22px;
+
+background: #00DF8F;
+transform: rotate(90deg);
+
+}
+.email-mainpage{
+  
+ 
+
+
+position: absolute;
+width: 183px;
+height: 23px;
+left: -43.91px;
+top: 582.22px;
+color: #00DF8F;
+
+
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+
+transform: rotate(-90deg);
+
+
+}
+.right-side{
+
+  display: flex;
+flex-direction: column;
+
+
+
+gap: 25px;
+position:absolute;
+width:45px;
+
+padding:10px;
+/* background-color:lightblue; */
+right: 0px;
+
+margin-top: 180px;
+margin-right: 35px;
+
+
+
+
+
+
+}
+
+.right-line-mainpage{
+ 
+  
+  position:absolute;
+
+ 
+  width: 150px;
+  height: 1px;
+  right: 0px;
+
+      margin-top: 480px;
+margin-right:-17px ;
+
+
+  background: #00DF8F;
+  transform: rotate(90deg);
+  
+  }
+
