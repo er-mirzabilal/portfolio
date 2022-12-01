@@ -8,32 +8,35 @@
 html {
   scroll-behavior: smooth;
   font-family: 'Poppins', sans-serif;
-  max-width: 1800px;
+  background-color: #0a1322;
+
 }
 
 @layer base {
   body {
-    @apply bg-[#0A1930] text-[#ffff] 
+    @apply  text-[#ffff]
   }
 
+  b {
+    @apply text-[#ffff]
+  }
 
- 
+  h1 {
+    @apply text-8xl py-2 font-bold text-[#F0F0F0]
+  }
 
-b{
-  @apply text-[#ffff] 
-}
- h1 {
-  @apply text-8xl  py-2 font-bold text-[#F0F0F0]
-}
   h2 {
-    @apply text-4xl    text-[#02CA82]   font-bold   py-2
+    @apply text-4xl text-[#02CA82] font-bold py-2
   }
-  h5{
-    @apply  text-2xl  font-normal  py-2
+
+  h5 {
+    @apply text-2xl font-normal py-2
   }
+
   h6 {
-    @apply text-[#02CA82]  text-xl  font-bold
+    @apply text-[#02CA82] text-xl font-bold
   }
+
   li {
     @apply cursor-pointer
   }
@@ -42,10 +45,15 @@ b{
     @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff]  text-[#02CA82]
   } */
 }
+
+
+
+
+
 /* main component */
 
 .dot {
-  
+
   height: 15px;
   width: 15px;
   background-color: #02CA82;
@@ -69,8 +77,9 @@ b{
   margin-top: -10px;
   text-transform: lowercase;
   font-weight: bold;
-  
+
 }
+
 .resume-button {
   color: green;
   background-color: transparent;
@@ -82,106 +91,120 @@ b{
   text-decoration: none;
   cursor: pointer;
 
- 
+
   margin-top: 40px;
-  
+
   font-weight: 600;
-  
-}
-
-
-
-
-.descrption{
-  
-  @apply
-   border-l-4
-   border-[#02CA82]
-
 
 }
-svg{
+
+
+
+
+.descrption {
+
+  @apply border-l-4 border-[#ffff]
+}
+
+svg {
   width: 20px;
 
 }
 
-.left-line-mainpage{
- 
 
 
+.email-mainpage {
+  color: #00DF8F;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
 
-position: absolute;
-width: 93px;
-height: 1px;
-/* left: 40.91px; */
-top: 770.22px;
-
-background: #00DF8F;
-transform: rotate(90deg);
-
-}
-.email-mainpage{
-  
- 
-
-
-position: absolute;
-width: 183px;
-height: 23px;
-left: -43.91px;
-top: 582.22px;
-color: #00DF8F;
-
-
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-
-transform: rotate(-90deg);
+  transform: rotate(-90deg);
 
 
 }
-.right-side{
+
+.right-side {
 
   display: flex;
-flex-direction: column;
+  flex-direction: column;
 
-
-
-gap: 25px;
-position:absolute;
-width:45px;
-
-padding:10px;
-/* background-color:lightblue; */
-right: 0px;
-
-margin-top: 180px;
-margin-right: 35px;
-
-
-
-
-
+  gap: 25px;
+ 
+  width: 25px;
 
 }
 
-.right-line-mainpage{
- 
-  
-  position:absolute;
-
- 
+.right-line-mainpage {
   width: 150px;
   height: 1px;
-  right: 0px;
-
-      margin-top: 480px;
-margin-right:-17px ;
-
-
   background: #00DF8F;
   transform: rotate(90deg);
-  
-  }
 
+}
+
+
+
+/* about component style  */
+
+.aboutbuttonsDiv{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+
+
+
+gap: 10px;
+}
+
+.aboutButtons {
+cursor: pointer;
+  
+align-items: flex-start;
+padding: 4px 16px;
+
+color:#00DF8F;
+font-weight: bold;
+
+background: #122b50;
+}
+.active{
+  background-color: #02CA82;
+  color: darkkhaki;
+}
+.line{
+  border-top: 0.5px solid #F0F0F0;
+}
+
+image{
+  width: fit-content;
+  height: fit-content;
+}
+
+
+
+
+
+
+.overlay {
+/* position: absolute; */
+
+
+ /* border-radius: 100%; */
+
+  background-color: #262729;
+
+  cursor: pointer;
+
+}
+
+text{
+  position: absolute;
+  /* top: 50%;
+  left: 50%; */
+
+/*  
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%); */
+}

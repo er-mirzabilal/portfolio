@@ -6,9 +6,12 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 const Main = () => {
   return (
-    <div id="home" className="ml-24 h-[726px] content-center   ">
-      <div className="    p-2 flex justify-around">
-        <div className="mt-64 ml-40">
+    <div
+      id="home"
+      className=" w-full flex items-center   justify-between pt-64 pb-32  "
+    >
+      <div className=" ">
+        <div className=" ">
           <h6>Hi my name is </h6>
           <h1>
             Mirza Bilal<span className="dot"></span>
@@ -24,12 +27,21 @@ const Main = () => {
           </div>
 
           <button className="resume-button  ">Resume </button>
-        
-        </div>
-        <div className="mt-44 ">
-          <img src="/mainpicture.svg" alt="" />
         </div>
       </div>
+      <div className="relative h-[450px] w-[450px] bg-white " >
+        <div className="overlay absolute z-[0] w-96 h-96">
+       
+        </div>
+        <div className="absolute z-[-0] ">
+    
+          <img src="/mainpicture.svg" className="   bottom-0" alt="" />
+        </div>
+      </div>
+
+
+
+              {/* <div className="w-[440px] h-[370px] bg-[#0D1F3A]  absolute  rounded-full mt-[68px] ml-2"></div> */}
     </div>
   );
 };

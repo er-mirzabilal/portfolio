@@ -1,10 +1,14 @@
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
+import { useRouter } from 'next/router';
+import ALink from "./activeLink";
 
 const Navbar = () => {
   const [shadow, setShadow] = useState(false);
   const [navBg, setNavBg] = useState("#0A1930");
   const [linkColor, setLinkColor] = useState("#ffff");
+
+  const router = useRouter();
 
   useEffect(() => {
     const handleShadow = () => {
@@ -22,12 +26,12 @@ const Navbar = () => {
       style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
-          ? "fixed w-full h-28 shadow-xl z-[100] ease-in-out duration-300"
-          : "fixed w-full h-28 z-[100]"
+          ? " fixed w-full  shadow-xl z-[100] ease-in-out duration-300"
+          : "fixed w-full  z-[100]"
       }
     >
-      <div className="flex justify-between items-center w-full h-full py-16 px-14 scroll-smooth scroll-hidden">
-        <Link href="/">
+      <div className="flex  justify-between items-center w-full  py-6 px-14 scroll-smooth scroll-hidden">
+        <ALink href="/">
           <a>
             <img
               src={"/navLogo.svg"}
@@ -37,82 +41,98 @@ const Navbar = () => {
               className="cursor-pointer"
             />
           </a>
-        </Link>
+        </ALink>
 
         <div>
           <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
             <li className="ml-10 text-sm uppercase">
-              <Link href="/#about">About</Link>
+              <ALink href="/#about">About</ALink>
             </li>
             <li className="ml-10 text-sm uppercase ">
-              <Link href="/#Experence">Experence</Link>
+              <ALink href="/#Experence">Experence</ALink>
             </li>
             <li className="ml-10 text-sm uppercase  ">
-              <Link href="/#projects">Projects</Link>
+              <ALink href="/#projects">Projects</ALink>
             </li>
             <li className="ml-10 text-sm uppercase  ">
-              <Link href="/resume">Blogs</Link>
+              <ALink href="/#Blogs">
+                
+             
+                
+              Blogs
+             
+             </ALink>
             </li>
             <li className="ml-10 text-sm uppercase  contact-button ">
-              <Link href="/#contact">Contact</Link>
+              <ALink href="/#contact">
+           
+                
+                contact
+          
+                </ALink>
             </li>
           </ul>
         </div>
       </div>
 
-      <div className="email-mainpage">mirza.bilal.ahmad8@gmail.com</div>
 
-      <div className="left-line-mainpage"></div>
 
-      <div orientation="right" className="right-side">
-      <Link href="/">
-          <a>
-            <img
-              src={"/Group 107.svg"}
-              alt="/"
-              width="70"
-              height="20"
-              className="cursor-pointer"
-            />
-          </a>
-        </Link>
-        <Link href="/">
-          <a>
-            <img
-              src={"/Group 108.svg"}
-              alt="/"
-              width="70"
-              height="20"
-              className="cursor-pointer"
-            />
-          </a>
-        </Link>
-        <Link href="/">
-          <a>
-            <img
-              src={"/Group 109.svg"}
-              alt="/"
-              width="70"
-              height="20"
-              className="cursor-pointer"
-            />
-          </a>
-        </Link>
-        <Link href="/">
-          <a>
-            <img
-              src={"/Group 110.svg"}
-              alt="/"
-              width="70"
-              height="20"
-              className="cursor-pointer"
-            />
-          </a>
-        </Link>
-       
-        
-      </div>
-      <div className="right-line-mainpage"></div> 
+
+
+      {/* <div className="fixed ">
+        <div className="email-mainpage">mirza.bilal.ahmad8@gmail.com</div>
+
+        <div className="left-line-mainpage  "></div>
+      </div> */}
+      {/* <div className="">
+        <div  className="right-side ">
+          <Link href="/">
+            <a>
+              <img
+                src={"/Group 107.svg"}
+                alt="/"
+                width="70"
+                height="20"
+                className="cursor-pointer"
+              />
+            </a>
+          </Link>
+          <Link href="/">
+            <a>
+              <img
+                src={"/Group 108.svg"}
+                alt="/"
+                width="70"
+                height="20"
+                className="cursor-pointer"
+              />
+            </a>
+          </Link>
+          <Link href="/">
+            <a>
+              <img
+                src={"/Group 109.svg"}
+                alt="/"
+                width="70"
+                height="20"
+                className="cursor-pointer"
+              />
+            </a>
+          </Link>
+          <Link href="/">
+            <a>
+              <img
+                src={"/Group 110.svg"}
+                alt="/"
+                width="70"
+                height="20"
+                className="cursor-pointer"
+              />
+            </a>
+          </Link>
+        </div>
+        <div className="right-line-mainpage"></div>
+      </div> */}
     </div>
   );
 };
