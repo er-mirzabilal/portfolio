@@ -2,7 +2,7 @@ import Link from "next/link";
 const StickyMedia = () => {
   return (
 
-<div>
+<div className="sm:visible invisible ">
 
 
 
@@ -23,7 +23,7 @@ const StickyMedia = () => {
 
 
 
-    <div className="fixed bottom-0 z-10 flex flex-col flex-wrap right-0 p-6 mb-40">
+    <div className="fixed bottom-0 z-10 flex flex-col  flex-wrap right-0 sm:p-6 p-0 mb-40">
       <div className="right-side mb-8   mx-auto">
         <Link href="/">
           <a>

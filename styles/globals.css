@@ -4,11 +4,15 @@
 
 
 @import url('https://fonts.googleapis.com/css?family=Poppins');
-
+body{
+  margin: 0;
+  padding: 0;
+}
 html {
   scroll-behavior: smooth;
   font-family: 'Poppins', sans-serif;
   background-color: #0a1322;
+  margin: 0;
 
 }
 
@@ -61,6 +65,17 @@ html {
   display: inline-block;
   margin-left: 8px;
 }
+
+.smdot {
+
+  height: 8px;
+  width: 8px;
+  background-color: #02CA82;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 8px;
+}
+
 
 .contact-button {
   color: green;

@@ -8,19 +8,19 @@ const Main = () => {
   return (
     <div
       id="home"
-      className=" w-full flex items-center   justify-between pt-64 pb-32  "
+      className=" w-fit sm:h-screen  flex sm:items-center  sm:flex-row flex-col-reverse  justify-between sm:pt-64 pt-28 sm:pb-32 pb-4 bg-stone-700"
     >
       <div className=" ">
         <div className=" ">
-          <h6>Hi my name is </h6>
-          <h1>
-            Mirza Bilal<span className="dot"></span>
+          <h6 className="sm:text-xl text-xs">Hi my name is </h6>
+          <h1 className="sm:text-[88px] text-4xl">
+            Mirza Bilal<span className="sm:dot  smdot"></span>
           </h1>
-          <h2>
+          <h2 className="sm:text-4xl text-2xl">
             Full Stack Web Developer<b>|</b>
           </h2>
           <div className="bg-[#0C1C34] p-2 px-6 descrption">
-            <h5>
+            <h5 className="sm:text-2xl text-xl">
               Sustainable development is the pathway <br /> to the future we
               want for all.
             </h5>
@@ -29,13 +29,13 @@ const Main = () => {
           <button className="resume-button  ">Resume </button>
         </div>
       </div>
-      <div className="relative h-[450px] w-[450px] bg-white " >
-        <div className="overlay absolute z-[0] w-96 h-96">
+      <div className=" sm:relative sm:h-[450px] sm:w-[450px]  " >
+        <div className="sm:overlay absolute z-[1] sm:w-96 sm:h-96 bottom-0 ml-8  mb-1  rounded-full ">
        
         </div>
-        <div className="absolute z-[-0] ">
+        <div className="sm:absolute z-[2]  sm:mx-0 mx-20">
     
-          <img src="/mainpicture.svg" className="   bottom-0" alt="" />
+          <img src="/mainpicture.svg" className="  rounded-full sm:mx-0 mx-auto " alt="" />
         </div>
       </div>
 

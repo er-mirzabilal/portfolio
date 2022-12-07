@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <div id="contact" className=" flex  flex-wrap py-32">
+    <div id="contact" className=" flex  flex-wrap py-32 bg-neutral-600">
       <div className="flex  h-fit w-full justify-center">
         <h2 className="font-extrabold text-3xl">Get in Touch </h2>
         <div className=" w-[433px] ml-4 mt-10  line"></div>

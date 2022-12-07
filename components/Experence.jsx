@@ -15,7 +15,7 @@ const Experence = () => {
 
 
   return (
-    <div id="Experence" className=" w-full py-32 ">
+    <div id="Experence" className=" w-full py-32 bg-slate-400">
       <div className="flex justify-center ">
         <h2>Where I’ve Worked </h2>
         <div className="h-0.5 w-[433px] ml-4 mt-6 border border-[#F0F0F0]"></div>

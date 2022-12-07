@@ -1,6 +1,6 @@
 const Blogs = () => {
   return (
-    <div id="Blogs" className=" flex  flex-wrap  py-32">
+    <div id="Blogs" className=" flex  flex-wrap  py-32 bg-zinc-100">
       <div className="flex  h-fit w-full justify-center">
         <h2 className="font-extrabold text-3xl">BLogs </h2>
         <div className=" w-[433px] ml-4  border-b-2 border-[#F0F0F0] "></div>

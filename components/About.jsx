@@ -8,7 +8,7 @@ const About = (props) => {
   return (
     <div
       id="about"
-      className="w-full   flex items-center py-32 "
+      className="w-fit   flex items-center py-32 bg-zinc-400 mx-auto"
     >
       <div className="max-w-[1240px]  flex gap-8 ">
         <div className="h-[350px] w-[350px] m-auto shadow-xl flex items-center  relative  justify-center ">
