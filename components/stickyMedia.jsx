@@ -2,7 +2,7 @@ import Link from "next/link";
 const StickyMedia = () => {
   return (
 
-<div className="sm:visible invisible ">
+<div className="lg:visible  invisible ">
 
 
 

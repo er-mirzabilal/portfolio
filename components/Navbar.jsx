@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
-import { useRouter } from 'next/router';
+import { useRouter } from "next/router";
 import ALink from "./activeLink";
 
 const Navbar = () => {
@@ -30,7 +30,7 @@ const Navbar = () => {
           : "fixed w-full  z-[100]"
       }
     >
-      <div className="flex  justify-between items-center w-full  py-6 px-14 scroll-smooth scroll-hidden">
+      <div className="flex  sm:justify-between  items-center w-full  py-6 px-14 scroll-smooth scroll-hidden">
         <ALink href="/">
           <a>
             <img
@@ -42,8 +42,23 @@ const Navbar = () => {
             />
           </a>
         </ALink>
+      <div className="visible sm:invisible">
 
-        <div>
+   
+        <ALink href="/">
+          <a>
+            <img
+              src={"/Vector.svg"}
+              alt="/"
+              width="50"
+              height="12"
+              className="cursor-pointer"
+            />
+          </a>
+        </ALink>
+        </div>
+
+        <div className="sm:visible invisible">
           <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
             <li className="ml-10 text-sm uppercase">
               <ALink href="/#about">About</ALink>
@@ -55,29 +70,14 @@ const Navbar = () => {
               <ALink href="/#projects">Projects</ALink>
             </li>
             <li className="ml-10 text-sm uppercase  ">
-              <ALink href="/#Blogs">
-                
-             
-                
-              Blogs
-             
-             </ALink>
+              <ALink href="/#Blogs">Blogs</ALink>
             </li>
             <li className="ml-10 text-sm uppercase  contact-button ">
-              <ALink href="/#contact">
-           
-                
-                contact
-          
-                </ALink>
+              <ALink href="/#contact">contact</ALink>
             </li>
           </ul>
         </div>
       </div>
-
-
-
-
 
       {/* <div className="fixed ">
         <div className="email-mainpage">mirza.bilal.ahmad8@gmail.com</div>

@@ -8,12 +8,12 @@ const Main = () => {
   return (
     <div
       id="home"
-      className=" w-fit sm:h-screen  flex sm:items-center  sm:flex-row flex-col-reverse  justify-between sm:pt-64 pt-28 sm:pb-32 pb-4 bg-stone-700"
+      className=" w-fit sm:h-screen  flex sm:items-center  sm:flex-row flex-col-reverse  justify-between sm:pt-64 pt-28 sm:pb-32 pb-4 "
     >
       <div className=" ">
         <div className=" ">
-          <h6 className="sm:text-xl text-xs">Hi my name is </h6>
-          <h1 className="sm:text-[88px] text-4xl">
+          {/* <h6 className="sm:text-xl text-xs">Hi my name is </h6> */}
+          <h1 className="sm:text-[88px] text-4xl mt-4 sm:mt-0">
             Mirza Bilal<span className="sm:dot  smdot"></span>
           </h1>
           <h2 className="sm:text-4xl text-2xl">
@@ -29,13 +29,13 @@ const Main = () => {
           <button className="resume-button  ">Resume </button>
         </div>
       </div>
-      <div className=" sm:relative sm:h-[450px] sm:w-[450px]  " >
+      <div className=" sm:relative sm:h-[450px] sm:w-[450px]  mt-4 sm:mt-0" >
         <div className="sm:overlay absolute z-[1] sm:w-96 sm:h-96 bottom-0 ml-8  mb-1  rounded-full ">
        
         </div>
         <div className="sm:absolute z-[2]  sm:mx-0 mx-20">
     
-          <img src="/mainpicture.svg" className="  rounded-full sm:mx-0 mx-auto " alt="" />
+          <img src="/mainpicture.svg" className="  rounded-full sm:mx-0 mx-auto   " alt="" />
         </div>
       </div>
 
