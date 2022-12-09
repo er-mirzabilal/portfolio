@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 function ActiveLink({ children, href }) {
   const router = useRouter()
   const style = {
-    // marginRight: 10,
+   
     color: router.asPath === href ? '#02CA82': 'white',
     
     
@@ -23,4 +23,4 @@ function ActiveLink({ children, href }) {
     </div>;
 };
 
-export default ActiveLink
+export default ActiveLink;

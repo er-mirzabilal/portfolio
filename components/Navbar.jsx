@@ -30,9 +30,12 @@ const Navbar = () => {
           : "fixed w-full  z-[100]"
       }
     >
-      <div className="flex  sm:justify-between  items-center w-full  py-6 px-14 scroll-smooth scroll-hidden">
-        <ALink href="/">
-          <a>
+
+        <div className="visible lg:invisible  w-full fixed flex  justify-between   py-6 px-6 ">
+
+          <div>
+          <ALink href="/">
+       
             <img
               src={"/navLogo.svg"}
               alt="/"
@@ -40,26 +43,72 @@ const Navbar = () => {
               height="20"
               className="cursor-pointer"
             />
-          </a>
+         
         </ALink>
-      <div className="visible sm:invisible">
+      
+          </div>
+      <div>
+        <button>
 
-   
+          <ALink href="/">
+         
+              <img
+                src={"/Vector.svg"}
+                alt="/"
+                width="40"
+                height="12"
+                className="cursor-pointer"
+              />
+        
+          </ALink>
+          </button>
+      
+          </div>
+
+
+
+       
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div className="lg:visible invisible   flex  lg:justify-between  items-center   py-6 lg:px-14 ">
         <ALink href="/">
-          <a>
+        
             <img
-              src={"/Vector.svg"}
+              src={"/navLogo.svg"}
               alt="/"
-              width="50"
-              height="12"
+              width="70"
+              height="20"
               className="cursor-pointer"
             />
-          </a>
+        
         </ALink>
-        </div>
+       
 
-        <div className="sm:visible invisible">
-          <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
+        <div className="">
+          <ul style={{ color: `${linkColor}` }} className="flex">
             <li className="ml-10 text-sm uppercase">
               <ALink href="/#about">About</ALink>
             </li>
@@ -77,6 +126,13 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
+
+
+
+
+
+
+
       </div>
 
       {/* <div className="fixed ">
@@ -95,7 +151,7 @@ const Navbar = () => {
                 height="20"
                 className="cursor-pointer"
               />
-            </a>
+          
           </Link>
           <Link href="/">
             <a>
@@ -106,7 +162,7 @@ const Navbar = () => {
                 height="20"
                 className="cursor-pointer"
               />
-            </a>
+          
           </Link>
           <Link href="/">
             <a>
@@ -117,7 +173,7 @@ const Navbar = () => {
                 height="20"
                 className="cursor-pointer"
               />
-            </a>
+          
           </Link>
           <Link href="/">
             <a>
@@ -128,7 +184,7 @@ const Navbar = () => {
                 height="20"
                 className="cursor-pointer"
               />
-            </a>
+          
           </Link>
         </div>
         <div className="right-line-mainpage"></div>

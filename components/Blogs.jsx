@@ -1,12 +1,12 @@
 const Blogs = () => {
   return (
-    <div id="Blogs" className=" flex  flex-wrap  py-32 bg-zinc-100">
-      <div className="flex  h-fit w-full justify-center">
-        <h2 className="font-extrabold text-3xl">BLogs </h2>
-        <div className=" w-[433px] ml-4  border-b-2 border-[#F0F0F0] "></div>
+    <div id="Blogs" className=" flex  flex-wrap  lg:py-32 py-20">
+      <div className="flex    justify-center">
+        <h2 className="font-extrabold lg:text-3xl text-xl">BLogs </h2>
+        <div className=" lg:w-[433px] ml-4  border-b-2 border-[#F0F0F0] "></div>
       </div>
 
-      <div className="grid grid-cols-3 relative gap-9 mt-10">
+      <div className="grid lg:grid-cols-3 grid-cols-1 lg:gap-6 gap-4   mt-10 ">
         <div className="flex flex-col bg-[url('../public/assets/nature.jpg')] justify-end px-6 pb-4 rounded-lg h-96">
           <div className=" ">
             <h5 className="text-sm font-bold">January 2, 2022</h5>
@@ -23,7 +23,7 @@ const Blogs = () => {
           </div>
         </div>
 
-        <div className="flex flex-col bg-[url('../public/assets/nature.jpg')] justify-end px-6 pb-4 rounded-lg ">
+        <div className="flex flex-col bg-[url('../public/assets/nature.jpg')] justify-end px-6 pb-4 rounded-lg h-96 ">
           <div className=" ">
             <h5 className="text-sm font-bold">January 2, 2022</h5>
           </div>
@@ -39,7 +39,7 @@ const Blogs = () => {
           </div>
         </div>
 
-        <div className="flex flex-col bg-[url('../public/assets/nature.jpg')] justify-end px-6 pb-4 rounded-lg ">
+        <div className="flex flex-col bg-[url('../public/assets/nature.jpg')] justify-end px-6 pb-4 rounded-lg h-96">
           <div className=" ">
             <h5 className="text-sm font-bold">January 2, 2022</h5>
           </div>
