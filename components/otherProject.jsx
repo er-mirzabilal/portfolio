@@ -17,12 +17,12 @@ const OtherProject = () => {
         </div>
       </div>
       <div>
-        <p className="font-bold mt-6 lg:text-xl text-base">
+        <p className="font-bold mt-6 text-[#F0F0F0] lg:text-xl text-base">
           Integrating Algolia Search with WordPress Multisite.
         </p>
       </div>
       <div>
-        <p className="mt-4 font-medium  text-sm">
+        <p className="mt-4 font-medium text-[#F0F0F0]  text-sm">
           A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and
           more. Available on Visual Studio Marketplace,{" "}
         </p>

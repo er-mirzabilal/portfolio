@@ -6,7 +6,7 @@ const StickyMedia = () => {
 
 
 
-<div className="fixed bottom-0 z-10 flex flex-col flex-wrap right- p-6 ">
+<div className="fixed bottom-20 z-10 flex flex-col flex-wrap right- p-6 ">
       <div className="right-side mb-8   mx-auto">
     
       

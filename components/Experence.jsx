@@ -15,7 +15,7 @@ const Experence = () => {
 
 
   return (
-    <div id="Experence" className=" w-full lg:py-32 py-12">
+    <div id="Experence" className=" w-full lg:py-32 py-20">
       <div className="flex lg:justify-center ">
         <h2 className="text-xl">Where I’ve Worked </h2>
         <div className="h-0.5 lg:w-[433px] lg:ml-4 mt-6 border border-[#F0F0F0] lg:visible invisible"></div>
@@ -69,17 +69,17 @@ const Experence = () => {
             </h2>
             <h6 className="text-sm">2019 - </h6>
             <ul className="  lg:p-2  space-y-3 ml-6 mt-4  list-disc">
-              <li  className="text-sm px-4 lg:px-0  ">
+              <li  className="text-sm px-4 lg:px-0 text-[#F0F0F0] ">
                 Write modern, performant, maintainable code for a diverse array
                 of client and internal projects
               </li>
-              <li className="text-sm px-4 lg:px-0 ">
+              <li className="text-sm px-4 lg:px-0  text-[#F0F0F0]">
                 Work with a variety of different languages, platforms,
                 frameworks, and content management systems such as JavaScript,
                 TypeScript, Gatsby, React, Craft, WordPress, Prismic, and
                 Netlify
               </li>
-              <li className="text-sm px-4 lg:px-0 ">
+              <li className="text-sm px-4 lg:px-0  text-[#F0F0F0]">
                 Communicate with multi-disciplinary teams of engineers,
                 designers, producers, and clients on a daily basis
               </li>
@@ -95,7 +95,7 @@ const Experence = () => {
             </h2>
             <h6 className="text-sm">2022 - </h6>
             <ul className="  lg:p-2  space-y-3 ml-6 mt-4  list-disc">
-              <li className="text-sm px-4 lg:px-0 ">
+              <li className="text-sm px-4 lg:px-0 text-[#F0F0F0] ">
                 Write modern, performant, maintainable code for a diverse array
                 of client and internal projects
               </li>
@@ -111,11 +111,11 @@ const Experence = () => {
             </h2>
             <h6 className="text-sm">2022 - </h6>
             <ul className="   lg:p-2  space-y-3 ml-6 mt-4  list-disc">
-              <li className="text-sm px-4 lg:px-0 ">
+              <li className="text-sm px-4 lg:px-0 text-[#F0F0F0] ">
                maintainable code for a diverse array
                 of client and internal projects
               </li>
-              <li className="text-sm px-4 lg:px-0 ">
+              <li className="text-sm px-4 lg:px-0  text-[#F0F0F0]">
                 Write modern, performant, maintainable code for a diverse array
                 of client and internal projects
               </li>
@@ -132,7 +132,7 @@ const Experence = () => {
             </h2>
             <h6 className="text-sm">2022 - </h6>
             <ul className="  lg:p-2  space-y-3 ml-6 mt-4  list-disc">
-              <li className="text-sm px-4 lg:px-0 ">
+              <li className="text-sm px-4 lg:px-0 text-[#F0F0F0] ">
               performant, maintainable code for a diverse array
                 of client and internal projects
               </li>

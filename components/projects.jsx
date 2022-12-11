@@ -10,7 +10,7 @@ import OtherProject from "./otherProject";
 
 const Project = (props) => {
   return (
-    <div id="projects" className="  flex flex-wrap  lg:py-32  ">
+    <div id="projects" className="  flex flex-wrap  lg:py-32  py-20 ">
       {/* <div className="flex  h-fit w-full justify-center ">
         <h2 className="font-extrabold text-3xl">Some Things I’ve Built </h2>
         <div className="h-0.5 w-[433px] ml-4 mt-10 border border-[#F0F0F0]"></div>

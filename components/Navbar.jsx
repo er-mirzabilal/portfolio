@@ -21,6 +21,8 @@ const Navbar = () => {
     window.addEventListener("scroll", handleShadow);
   }, []);
 
+  const [mobilebar ,setMobilebar] =useState(false)
+
   return (
     <div
       style={{ backgroundColor: `${navBg}` }}
@@ -48,7 +50,7 @@ const Navbar = () => {
       
           </div>
       <div>
-        <button>
+        <button onClick={()=> setMobilebar(!mobilebar)}>
 
           <ALink href="/">
          
@@ -71,6 +73,12 @@ const Navbar = () => {
       </div>
 
 
+ {/* <div class="max-w-screen-sm p-10">
+    <div class="relative h-4 overflow-hidden rounded-full bg-gray-300">
+      <div id="progress" class="animate-loading absolute h-full  rounded-full bg-green-500"> 
+      </div>
+    </div>
+  </div> */}
 
 
 
@@ -93,7 +101,63 @@ const Navbar = () => {
 
 
 
-      <div className="lg:visible invisible   flex  lg:justify-between  items-center   py-6 lg:px-14 ">
+
+
+
+
+
+
+
+
+
+
+
+
+{mobilebar &&   <div className=" mt-20 fixed  bg-[#0B1A32]  ">
+ <div className="        ">
+
+
+   <div className="">
+     <ul style={{ color: `${linkColor}` }} className=" p-2">
+       <li className=" text-sm uppercase m-2 p-2">
+         <ALink href="/#about">About</ALink>
+       </li>
+       <li className=" text-sm uppercase  m-2 p-2 ">
+         <ALink href="/#Experence">Experence</ALink>
+       </li>
+       <li className=" text-sm uppercase   m-2 p-2">
+         <ALink href="/#projects">Projects</ALink>
+       </li>
+       <li className=" text-sm uppercase   m-2 p-2">
+         <ALink href="/#Blogs">Blogs</ALink>
+       </li>
+       <li className=" text-sm uppercase   m-2 p-2   border-solid  border-2 border-[#02CA82]  ">
+         <ALink href="/#contact">contact</ALink>
+       </li>
+     </ul>
+   </div>
+
+ </div>
+
+
+</div> }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div className="lg:visible invisible   flex  lg:justify-between  items-center   py-6 px-14 ">
         <ALink href="/">
         
             <img
@@ -108,20 +172,20 @@ const Navbar = () => {
        
 
         <div className="">
-          <ul style={{ color: `${linkColor}` }} className="flex">
-            <li className="ml-10 text-sm uppercase">
+          <ul style={{ color: `${linkColor}` }} className="flex ">
+            <li className=" text-sm uppercase mr-4">
               <ALink href="/#about">About</ALink>
             </li>
-            <li className="ml-10 text-sm uppercase ">
+            <li className=" text-sm uppercase mr-4">
               <ALink href="/#Experence">Experence</ALink>
             </li>
-            <li className="ml-10 text-sm uppercase  ">
+            <li className=" text-sm uppercase  mr-4">
               <ALink href="/#projects">Projects</ALink>
             </li>
-            <li className="ml-10 text-sm uppercase  ">
+            <li className=" text-sm uppercase  ">
               <ALink href="/#Blogs">Blogs</ALink>
             </li>
-            <li className="ml-10 text-sm uppercase  contact-button ">
+            <li className=" text-sm uppercase mr-4 contact-button ">
               <ALink href="/#contact">contact</ALink>
             </li>
           </ul>
@@ -135,60 +199,7 @@ const Navbar = () => {
 
       </div>
 
-      {/* <div className="fixed ">
-        <div className="email-mainpage">mirza.bilal.ahmad8@gmail.com</div>
-
-        <div className="left-line-mainpage  "></div>
-      </div> */}
-      {/* <div className="">
-        <div  className="right-side ">
-          <Link href="/">
-            <a>
-              <img
-                src={"/Group 107.svg"}
-                alt="/"
-                width="70"
-                height="20"
-                className="cursor-pointer"
-              />
-          
-          </Link>
-          <Link href="/">
-            <a>
-              <img
-                src={"/Group 108.svg"}
-                alt="/"
-                width="70"
-                height="20"
-                className="cursor-pointer"
-              />
-          
-          </Link>
-          <Link href="/">
-            <a>
-              <img
-                src={"/Group 109.svg"}
-                alt="/"
-                width="70"
-                height="20"
-                className="cursor-pointer"
-              />
-          
-          </Link>
-          <Link href="/">
-            <a>
-              <img
-                src={"/Group 110.svg"}
-                alt="/"
-                width="70"
-                height="20"
-                className="cursor-pointer"
-              />
-          
-          </Link>
-        </div>
-        <div className="right-line-mainpage"></div>
-      </div> */}
+    
     </div>
   );
 };

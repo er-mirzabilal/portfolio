@@ -10,7 +10,7 @@ const About = (props) => {
     <>
       <div
       id="about"
-      className="   flex items-center lg:py-32 py-6 mx-auto" 
+      className="   flex items-center lg:py-32 py-20 mx-auto" 
     >
       <div className=" flex lg:gap-8  lg:flex-row flex-col ">
         <div className="lg:h-[350px] lg:w-[350px]  w-[90%] h-[90%]  m-auto shadow-xl flex lg:items-center  relative  lg:justify-center ">
@@ -29,7 +29,7 @@ const About = (props) => {
             decided to try editing custom Tumblr themes — turns out hacking
             together a custom reblog button taught me a lot about HTML & CSS!
           </p>
-          <p className=" lg:text-lg text-base ">
+          <p className=" lg:text-lg text-base text-[#F0F0F0]">
             My main focus these days is building accessible, inclusive products
             and digital experiences. I decided to try editing custom Tumblr
             themes — turns out hacking together a custom reblog button taught me
