@@ -1,16 +1,18 @@
 const Contact = () => {
   return (
-    <div id="contact" className=" flex  flex-wrap lg:py-32 pb-20">
+    <div id="contact" className=" lg:py-32 pb-20">
      
 
+ 
+
       <div className="flex lg:justify-center ">
-        <h2 className="text-xl">Get in Touch  </h2>
+        <h2 className="text-xl">Get in Touch </h2>
         <div className="h-0.5 lg:w-[433px] lg:ml-4 mt-6 border border-[#F0F0F0] lg:visible invisible"></div>
       </div>
 
 
 
-      <div className="flex text-white  flex-col 	mx-auto mt-14 ">
+      <div className="flex text-white  flex-col text-center	lg:mx-auto m mt-14 ">
         <div className="lg:m-6 ">
           <input
             className="mr-4 lg:w-[255px] p-4 bg-[#0D1F3B] w-full mb-2 rounded-lg  outline-blue-500  border-[#143668] border"
@@ -46,7 +48,7 @@ const Contact = () => {
         </div>
         <div className="lg:mx-6">
      
-        <button className="border-[#02CA82] border rounded-lg  p-4 w-full mt-2 text-[#02CA82] font-bold">Send </button>
+        <button className="border-[#02CA82] border rounded-lg lg:w-[530px]  p-4 w-full mt-2 text-[#02CA82] font-bold">Send </button>
       </div>
       </div>
     </div>

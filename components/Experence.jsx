@@ -15,7 +15,7 @@ const Experence = () => {
 
 
   return (
-    <div id="Experence" className=" w-full lg:py-32 py-20">
+    <div id="Experence" className="  lg:py-32 py-20">
       <div className="flex lg:justify-center ">
         <h2 className="text-xl">Where I’ve Worked </h2>
         <div className="h-0.5 lg:w-[433px] lg:ml-4 mt-6 border border-[#F0F0F0] lg:visible invisible"></div>

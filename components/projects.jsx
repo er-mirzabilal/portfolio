@@ -162,7 +162,7 @@ const Project = (props) => {
         <OtherProject />
       </div>
       <div className="flex  h-fit w-full justify-center">
-        {" "}
+      
         <button className="resume-button text-sm  ">Show More </button>
       </div>
     </div>
