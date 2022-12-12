@@ -2,8 +2,8 @@ const Blogs = () => {
   return (
     <div id="Blogs" className=" flex  flex-wrap  lg:py-32 py-20">
       <div className="flex    justify-center">
-        <h2 className="font-extrabold lg:text-3xl text-xl">BLogs </h2>
-        <div className=" lg:w-[433px] ml-4  border-b-2 border-[#F0F0F0] "></div>
+        <h2 className="text-xl">BLogs </h2>
+        <div className=" lg:w-[433px] ml-4  border-b-2 border-[#F0F0F0] mb-4 "></div>
       </div>
 
       <div className="grid lg:grid-cols-3 grid-cols-1 lg:gap-6 gap-4   mt-10 ">

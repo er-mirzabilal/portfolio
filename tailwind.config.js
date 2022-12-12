@@ -27,8 +27,8 @@ module.exports = {
     extend: {
       animation: {
     
-        type: 'type 6.8s ease-out 2.8s 1 normal both',
-        'type-reverse': 'type 1.8s ease-out 0s infinite alternate-reverse both',
+       
+        'type-reverse': 'type 1.8s ease-out 1.8s infinite alternate-reverse both',
       },
       keyframes: {
         type: {

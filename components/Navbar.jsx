@@ -29,7 +29,7 @@ const Navbar = () => {
       className={
         shadow
           ? " fixed w-full  shadow-xl z-[100] ease-in-out duration-300"
-          : "fixed w-full  z-[100]"
+          : "invisible w-full  z-[100]"
       }
     >
 

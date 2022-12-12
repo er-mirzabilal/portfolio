@@ -26,39 +26,17 @@ const Main = () => {
 
       <div className="text-center ">
         <div className=" ">
-        
           <h1 className="lg:text-[58px] text-4xl mt-4 lg:mt-0">
             Mirza Bilal<span className="sm:dot  smdot"></span>
           </h1>
           <h2 className="lg:text-3xl  mt-4 text-2xl ">
-           
-          <span
-      className=" inline-flex h-20 pt-2 overflow-x-hidden animate-type animate-type-reverse whitespace-nowrap  will-change-transform"
-    >
-    Full Stack Web Developer 
-    </span>
-    <span
-      className="box-border inline-block w-1 ml-2  bg-white  lg:h-8 animate-cursor will-change-transform"
-    >    </span>
-
+            <span className=" inline-flex h-20 pt-2 overflow-x-hidden animate-type animate-type-reverse whitespace-nowrap  will-change-transform">
+              Full Stack Web Developer
+            </span>
+            <span className="box-border inline-block lg:w-1 w-1 h-6 ml-2  bg-white  lg:h-8 animate-cursor will-change-transform">
+       
+            </span>
           </h2>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
           <div className="bg-[#0C1C34]  mt-4 p-2 px-6 descrption">
             <h5 className="lg:text-2xl text-base text-[#CCD7F7]">
