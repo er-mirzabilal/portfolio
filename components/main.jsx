@@ -8,7 +8,7 @@ const Main = () => {
   return (
     <div
       id="home"
-      className="lg:h-screen  flex lg:items-center  lg:flex-col flex-col   lg:pt-64 pt-24 lg:pb-20 pb-14  z-0"
+      className="lg:h-screen  flex lg:items-center  lg:flex-col flex-col   lg:pt-64 pt-32 lg:pb-20 pb-14  z-0"
     >
       <div id="container" className="flex justify-center">
         <div className=" lg:relative relative  lg:h-[160px] lg:w-[160px] w-[160px]  h-[160px]  lg:mb-10  lg:mt-0">
