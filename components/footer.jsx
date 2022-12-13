@@ -24,8 +24,8 @@ const Footer = () => {
   const [mobilebar, setMobilebar] = useState(false);
 
   return (
-    <div style={{ backgroundColor: `${navBg}` }}>
-      <div className="  flex lg:flex-row flex-col lg:justify-between       pt-4 lg:pb-1 lg:px-14  px-4 ">
+    <div >
+      <div className="  flex lg:flex-row flex-col lg:justify-between  shadow-sm  shadow-[#72e2ae]  pt-4 lg:pb-1 lg:px-14  px-4 ">
         <div>
           {" "}
           <h6 className="text-sm ">All Rights Reserved.</h6>

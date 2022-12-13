@@ -1,6 +1,9 @@
+import Link from "next/link";
+import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
+
 const Contact = () => {
   return (
-    <div id="contact" className=" lg:py-32 pb-20">
+    <div id="contact" className=" lg:pt-32 lg:pb-0 pb-10">
      
 
  
@@ -38,7 +41,7 @@ const Contact = () => {
             placeholder="Email"
           />
         </div>
-        <div className="lg:m-6">
+        <div className="lg:m-6 drop-shadow-2xl">
           <textarea
             className="lg:w-[530px] lg:min-h-[150px] w-full p-6 mb-2 rounded-lg   outline-blue-500  bg-[#0D1F3B] border-[#143668] border"
             id="subject"
@@ -50,6 +53,20 @@ const Contact = () => {
      
         <button className="border-[#02CA82] border rounded-lg lg:w-[530px]  p-4 w-full mt-2 text-[#02CA82] font-bold">Send </button>
       </div>
+
+
+      <div className='flex justify-center py-12'>
+          <Link href='/'>
+            <a>
+              <div className='rounded-full shadow-sm shadow-[#02CA82] lg:mt-16 p-4 cursor-pointer hover:scale-110 ease-in duration-100'>
+                <HiOutlineChevronDoubleUp
+                  className='text-[#02CA82]'
+                  size={30}
+                />
+              </div>
+            </a>
+          </Link>
+        </div>
       </div>
     </div>
   );

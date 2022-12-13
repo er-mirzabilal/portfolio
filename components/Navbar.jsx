@@ -33,8 +33,8 @@ const Navbar = () => {
       style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
-          ? 'fixed w-full h-16 shadow-sm shadow-[#72e2ae]  z-[100] ease-in-out duration-300'
-          : 'fixed w-full h-16 z-[100]'
+          ? 'fixed w-full hidden h-16 shadow-sm shadow-[#72e2ae]  z-[100] ease-in-out duration-300'
+          : 'fixed   w-full h-16 z-[100]'
       }
     >
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>

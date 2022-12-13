@@ -8,17 +8,23 @@ const About = (props) => {
   return (
     <>
       <div id="about" className="   flex items-center lg:py-32 py-20 mx-auto">
-        <div className=" flex lg:gap-8  lg:flex-row flex-col ">
-          <div className="lg:h-[350px] lg:w-[350px]    m-auto shadow-xl flex lg:items-center  items-center relative justify-center  lg:justify-center ">
-            <div className="lg:w-[360px] lg:h-[360px]  lg:mt-20  w-72 h-72  ml-8 mt-4 shadow-xl flex items-center border lg:absolute absolute  border-[#ffff] justify-center lg:p-8 lg:hover:scale-105 lg:ease-in lg:duration-300"></div>
-            <div className="mb-4 lg:w-96 lg:h-[96]   w-72 h-72">
+        <div className=" flex   lg:flex-row flex-col ">
+          <div className="lg:h-[450px] lg:w-[450px]    m-auto shadow-xl flex lg:items-center  items-center relative justify-center  lg:justify-center ">
+            <div className="lg:w-[400px] lg:h-[400px]  lg:mt-0  w-72 h-72  ml-8 mt-4 shadow-xl flex items-center border lg:absolute absolute  border-[#ffff] justify-center lg:p-8 lg:hover:scale-105 lg:ease-in lg:duration-300"></div>
+            <div className="mb-4 lg:w-[440px] lg:h-[460px]   w-72 h-72">
               {" "}
               <Image src={AboutImg} className="absolute    " alt="/" />
             </div>
           </div>
 
           <div className="lg:w-[503px] lg:ml-8">
-            <h2 className="py-4 text-xl">About Me</h2>
+
+          <div className="flex ">
+        <h2 className="text-xl mt-16 lg:mt-0">About Me</h2>
+        <div className="h-0.5 lg:w-[393px] lg:ml-4 mt-6 border border-[#F0F0F0] lg:visible invisible"></div>
+      </div>
+
+
             <p className="py-2  lg:text-lg text-base font-medium text-[#F0F0F0]">
               Hello! My name is Bilal and I enjoy creating things that live on
               the internet. My interest in web development started back in 2012
@@ -39,7 +45,7 @@ const About = (props) => {
               <AboutButton text={"CSS"} />
               <AboutButton text={"React"} />
               <AboutButton text={"React Native"} />
-              <br />
+              {/* <br /> */}
               <AboutButton text={"Android"} />
               <AboutButton text={"PHP"} />
               <AboutButton text={"Laravel"} />
