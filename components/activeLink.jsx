@@ -2,8 +2,10 @@ import { useRouter } from "next/router";
 function ActiveLink({ children, href }) {
   const router = useRouter();
   const style = {
+    // color: active ? "#02CA82" : "white",
     color: router.asPath === href ? "#02CA82" : "white",
   };
+  console.log(router.asPath, "router.asPath");
   const handleClick = (e) => {
     e.preventDefault();
     router.push(href);
