@@ -8,17 +8,16 @@ function MyApp({ Component, pageProps }) {
   return (
     <div>
       <Head>
-        <script src="../node_modules/tw-elements/dist/js/index.min.js"></script>
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         />
       </Head>
 
-      <Navbar />
-      <StickyMedia />
+      {/* <Navbar /> */}
+      {/* <StickyMedia /> */}
       <Component {...pageProps} />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

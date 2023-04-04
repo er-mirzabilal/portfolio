@@ -18,8 +18,9 @@ const Blogs = () => {
             </h2>
           </div>
           <div className="">
-       
-            <p className="text-lg underline underline-offset-1 cursor-pointer font-bold">View Details</p>{" "}
+            <p className="text-lg underline underline-offset-1 cursor-pointer font-bold">
+              View Details
+            </p>{" "}
           </div>
         </div>
 
@@ -30,12 +31,14 @@ const Blogs = () => {
 
           <div>
             <h2 className="text-2xl text-white">
-            What is Front End Development
+              What is Front End Development
             </h2>
           </div>
           <div className="">
-            {" "} 
-            <p className="text-lg underline underline-offset-1 cursor-pointer font-bold">View Details</p>{" "}
+            {" "}
+            <p className="text-lg underline underline-offset-1 cursor-pointer font-bold">
+              View Details
+            </p>{" "}
           </div>
         </div>
 
@@ -50,8 +53,9 @@ const Blogs = () => {
             </h2>
           </div>
           <div className="">
-            
-            <p className="text-lg underline underline-offset-1 cursor-pointer font-bold">View Details</p>
+            <p className="text-lg underline underline-offset-1 cursor-pointer font-bold">
+              View Details
+            </p>
           </div>
         </div>
       </div>

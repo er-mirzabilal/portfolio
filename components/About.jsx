@@ -1,9 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 import AboutImg from "../public/assets/about.jpg";
 import AboutButton from "./aboutButton";
-import Visual from "./framerMotion/fadeIn";
+import Marquee from "react-easy-marquee";
 
 const About = (props) => {
   return (
@@ -40,15 +39,23 @@ const About = (props) => {
             </p>
 
             <div className="aboutbuttonsDiv lg:pt-2 pt-10 ml-0 drop-shadow-2xl shadow-blue-500/50  ">
-              <AboutButton text={"HTML"} />
-              <AboutButton text={"Javascript"} />
-              <AboutButton text={"CSS"} />
-              <AboutButton text={"React"} />
-              <AboutButton text={"React Native"} />
-              {/* <br /> */}
-              <AboutButton text={"Android"} />
-              <AboutButton text={"PHP"} />
-              <AboutButton text={"Laravel"} />
+              <Marquee
+                duration={6000}
+                axis="X"
+                width="100%"
+                pauseOnHover={true}
+                reverse={true}
+              >
+                <AboutButton text={"HTML"} />
+                <AboutButton text={"Javascript"} />
+                <AboutButton text={"CSS"} />
+                <AboutButton text={"React"} />
+                <AboutButton text={"React Native"} />
+                <AboutButton text={"Android"} />
+                <AboutButton text={"PHP"} />
+                <AboutButton text={"Laravel"} />
+                {/* <br /> */}
+              </Marquee>
             </div>
           </div>
         </div>

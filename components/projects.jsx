@@ -21,18 +21,15 @@ const Project = (props) => {
         <div className="h-0.5 lg:w-[433px] lg:ml-4 mt-6 border border-[#F0F0F0] lg:visible invisible"></div>
       </div>
 
-
-
-
       <div className="lg:max-w-[1240px] mt-12  flex gap-8  flex-col lg:flex-row">
-        <div className="  m-auto shadow-xl flex items-center   justify-center ">
+        <div className="  m-auto shadow-xl flex items-center   justify-center hover:drop-shadow-[0_2px_5px_rgb(0,128,0)]">
           <div className="mb-4 ">
             {" "}
             <Image src={Frame45} className="    " alt="/" />
           </div>
         </div>
 
-        <div className="lg:w-[603px] lg:ml-8 lg:mt-20">
+        <div className="lg:w-[603px] lg:ml-8 lg:mt-20 ">
           <div className="pb-4 ">
             <h2 className="lg:text-xl text-base pb-4">Feature Project </h2>
             <h1 className="lg:text-5xl  text-xl pb-4">Halcyon Theme</h1>
@@ -77,10 +74,6 @@ const Project = (props) => {
       </div>
 
       <div className="lg:max-w-[1240px] mt-20  flex gap-8 flex-col lg:flex-row ">
-   
-
-
-
         <div className="lg:w-[603px] lg:ml-8 lg:mt-20">
           <div className="pb-4 ">
             <h2 className="lg:text-xl text-base pb-4">Feature Project </h2>
@@ -124,7 +117,6 @@ const Project = (props) => {
           </div>
         </div>
 
-
         <div className="  m-auto shadow-xl flex items-center   justify-center ">
           <div className="mb-4 ">
             {" "}
@@ -139,16 +131,11 @@ const Project = (props) => {
       </div> */}
 
       <div className="flex lg:justify-center  my-10">
-        <h2 className="text-xl">Other Projects  </h2>
+        <h2 className="text-xl">Other Projects </h2>
         <div className="h-0.5 lg:w-[433px] lg:ml-4 mt-6 border border-[#F0F0F0] lg:visible invisible"></div>
       </div>
 
-
-
-
-
-
-      <div className="grid lg:grid-cols-3 grid-cols-1 lg:gap-6 gap-4 lg:mt-10 mb-2">
+      <div className="grid lg:grid-cols-3 grid-cols-1 lg:gap-6 gap-4 lg:mt-10 mb-2 ">
         <OtherProject />
 
         <OtherProject />
@@ -162,7 +149,6 @@ const Project = (props) => {
         <OtherProject />
       </div>
       <div className="flex  h-fit w-full justify-center">
-      
         <button className="resume-button text-sm  ">Show More </button>
       </div>
     </div>

@@ -1,19 +1,13 @@
 import Link from "next/link";
-import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
+import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 
 const Contact = () => {
   return (
     <div id="contact" className=" lg:pt-32 lg:pb-0 pb-10">
-     
-
- 
-
       <div className="flex lg:justify-center ">
         <h2 className="text-xl">Get in Touch </h2>
         <div className="h-0.5 lg:w-[433px] lg:ml-4 mt-6 border border-[#F0F0F0] lg:visible invisible"></div>
       </div>
-
-
 
       <div className="flex text-white  flex-col text-center	lg:mx-auto m mt-14 ">
         <div className="lg:m-6 ">
@@ -50,17 +44,17 @@ const Contact = () => {
           ></textarea>
         </div>
         <div className="lg:mx-6">
-     
-        <button className="border-[#02CA82] border rounded-lg lg:w-[530px]  p-4 w-full mt-2 text-[#02CA82] font-bold">Send </button>
-      </div>
+          <button className="border-[#02CA82] border rounded-lg lg:w-[530px]  p-4 w-full mt-2 text-[#02CA82] font-bold">
+            Send{" "}
+          </button>
+        </div>
 
-
-      <div className='flex justify-center py-12'>
-          <Link href='/'>
+        <div className="flex justify-center py-12">
+          <Link href="/">
             <a>
-              <div className='rounded-full shadow-sm shadow-[#02CA82] lg:mt-16 p-4 cursor-pointer hover:scale-110 ease-in duration-100'>
+              <div className="rounded-full shadow-sm shadow-[#02CA82] lg:mt-16 p-4 cursor-pointer hover:scale-110 ease-in duration-100">
                 <HiOutlineChevronDoubleUp
-                  className='text-[#02CA82]'
+                  className="text-[#02CA82]"
                   size={30}
                 />
               </div>

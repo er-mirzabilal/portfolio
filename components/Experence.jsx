@@ -16,59 +16,50 @@ const Experence = () => {
       <div className=" flex gap-8 mt-14  lg:flex-row flex-col ">
         <div className=" ml-2 flex  flex-row lg:flex-col  h-fit font-bold  overflow-auto">
           <div className="hover:bg-[#0EC98533]  hover:border-[#02CA82] w-max  lg:p-2 lg:px-6  px-2  lg:border-b-0    lg:border-l-4  border-b-4  border-[#ffff]">
-            <button onClick={() => setActiveExp("bayt")}>
+            <button
+              style={{ color: activeExp === "bayt" ? "#02CA82" : "white" }}
+              onClick={() => setActiveExp("bayt")}
+            >
               {" "}
-              <li className=" list-none p-2 lg:space-y-3">
-                {" "}
-                <button
-                  style={{ color: activeExp === "bayt" ? "#02CA82" : "white" }}
-                >
-                  Bayt.com
-                </button>
-              </li>
+              <li className=" list-none p-2 lg:space-y-3"> Bayt.com</li>
             </button>
           </div>
 
           <div className="hover:bg-[#0EC98533]  hover:border-[#02CA82] w-max  lg:p-2 lg:px-6  px-2  lg:border-b-0    lg:border-l-4  border-b-4  border-[#ffff]">
-            <button onClick={() => setActiveExp("zapta")}>
+            <button
+              style={{ color: activeExp === "zapta" ? "#02CA82" : "white" }}
+              onClick={() => setActiveExp("zapta")}
+            >
               <li className=" list-none p-2 space-y-3  w-max">
-                <button
-                  style={{ color: activeExp === "zapta" ? "#02CA82" : "white" }}
-                >
-                  Zapta Technologies
-                </button>
+                Zapta Technologies
               </li>
             </button>
           </div>
           <div className=" hover:bg-[#0EC98533]  hover:border-[#02CA82] lg:p-2 lg:px-6  px-2 lg:border-b-0    lg:border-l-4  border-b-4  border-[#ffff]">
-            <button onClick={() => setActiveExp("gift")}>
+            <button
+              style={{ color: activeExp === "gift" ? "#02CA82" : "white" }}
+              onClick={() => setActiveExp("gift")}
+            >
               <li className="list-none p-2 space-y-3  w-max">
-                <button
-                  style={{ color: activeExp === "gift" ? "#02CA82" : "white" }}
-                >
-                  Gift University
-                </button>
+                Gift University
               </li>
             </button>
           </div>
 
           <div className="hover:bg-[#0EC98533]  hover:border-[#02CA82] lg:p-2 lg:px-6  px-2 lg:border-b-0    lg:border-l-4  border-b-4  border-[#ffff]">
-            <button onClick={() => setActiveExp("google")}>
-              <li className=" list-none p-2 space-y-3">
-                <button
-                  style={{
-                    color: activeExp === "google" ? "#02CA82" : "white",
-                  }}
-                >
-                  Google
-                </button>
-              </li>
+            <button
+              style={{
+                color: activeExp === "google" ? "#02CA82" : "white",
+              }}
+              onClick={() => setActiveExp("google")}
+            >
+              <li className=" list-none p-2 space-y-3">Google</li>
             </button>
           </div>
         </div>
 
         {activeExp === "bayt" && (
-          <div className=" animate__animated animate__backInUp  lg:w-[603px]  id-1 ">
+          <div className=" animate__animated animate__pulse lg:w-[603px]  id-1 ">
             <h2 className="leading-none lg:text-2xl text-lg text-[#ffff]">
               Sr. Full Stack Software Engineer
             </h2>
@@ -93,7 +84,7 @@ const Experence = () => {
         )}
 
         {activeExp === "zapta" && (
-          <div className="animate__animated animate__backInLeft  lg:w-[603px] id-2 ">
+          <div className="animate__animated animate__pulse lg:w-[603px] id-2 ">
             <h2 className="leading-none lg:text-2xl text-lg  text-[#ffff]">
               Sr. Full Stack Software Engineer
             </h2>
@@ -108,7 +99,7 @@ const Experence = () => {
         )}
 
         {activeExp === "gift" && (
-          <div className="animate__animated animate__backInRight lg:w-[603px] id-4 ">
+          <div className="animate__animated animate__pulse lg:w-[603px] id-4 ">
             <h2 className="leading-none lg:text-2xl text-lg  text-[#ffff]">
               Sr. Full Stack Software Engineer
             </h2>
@@ -127,7 +118,7 @@ const Experence = () => {
         )}
 
         {activeExp === "google" && (
-          <div className=" animate__animated animate__backInUp lg:w-[603px] id-4 ">
+          <div className=" animate__animated animate__pulse lg:w-[603px] id-4 ">
             <h2 className="leading-none lg:text-2xl text-lg  text-[#ffff]">
               Software Engineer
             </h2>

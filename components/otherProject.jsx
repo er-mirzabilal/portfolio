@@ -3,9 +3,7 @@ import prologo2 from "../public/assets/projects/prologo2.svg";
 import Image from "next/image";
 const OtherProject = () => {
   return (
-    <div
-      className="bg-[#0C1C34] shadow-2xl rounded-md p-4 mb-4"
-    >
+    <div className="bg-[#0C1C34] shadow-2xl rounded-md p-4 mb-4 hover:shadow-2xl hover:border-[#00DF8F] hover:border-4">
       <div className="mt-4  flex justify-between">
         <div>
           {" "}
@@ -28,7 +26,9 @@ const OtherProject = () => {
         </p>
       </div>
       <div className="aboutbuttonsDiv pt-4  ">
-        <button className="lg:text-base text-sm font-bold  text-[#00DF8F]">VS Code</button>
+        <button className="lg:text-base text-sm font-bold  text-[#00DF8F]">
+          VS Code
+        </button>
         <button className="lg:text-base text-sm font-bold px-2 text-[#00DF8F]">
           Sublime Text
         </button>
