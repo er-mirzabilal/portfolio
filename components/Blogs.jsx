@@ -6,8 +6,8 @@ const Blogs = () => {
         <div className=" lg:w-[433px] ml-4  border-b-2 border-[#F0F0F0] mb-4 "></div>
       </div>
 
-      <div className="grid lg:grid-cols-3 grid-cols-1 lg:gap-6 gap-4   mt-10 ">
-        <div className="flex flex-col bg-[url('../public/assets/nature.jpg')] justify-end px-6 pb-4 rounded-lg h-96">
+      <div className="grid lg:grid-cols-3 grid-cols-1 lg:gap-6 gap-4   mt-10   ">
+        <div className="flex flex-col bg-[url('../public/assets/nature.jpg')] justify-end px-6 pb-4 rounded-lg h-96 drop-shadow-[0_2px_5px_rgb(0,128,0)] cursor-pointer ">
           <div className=" ">
             <h5 className="text-sm font-bold">January 2, 2022</h5>
           </div>
@@ -24,7 +24,7 @@ const Blogs = () => {
           </div>
         </div>
 
-        <div className="flex flex-col bg-[url('../public/assets/nature.jpg')] justify-end px-6 pb-4 rounded-lg h-96 ">
+        <div className="flex flex-col bg-[url('../public/assets/nature.jpg')] justify-end px-6 pb-4 rounded-lg h-96  drop-shadow-[0_2px_5px_rgb(0,128,0)] cursor-pointer ">
           <div className=" ">
             <h5 className="text-sm font-bold">January 2, 2022</h5>
           </div>
@@ -42,7 +42,7 @@ const Blogs = () => {
           </div>
         </div>
 
-        <div className="flex flex-col bg-[url('../public/assets/nature.jpg')] justify-end px-6 pb-4 rounded-lg h-96">
+        <div className="flex flex-col bg-[url('../public/assets/nature.jpg')] justify-end px-6 pb-4 rounded-lg h-96 drop-shadow-[0_2px_5px_rgb(0,128,0)] cursor-pointer ">
           <div className=" ">
             <h5 className="text-sm font-bold">January 2, 2022</h5>
           </div>

@@ -1,10 +1,23 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import Image from "next/image";
 import AboutImg from "../public/assets/about.jpg";
 import AboutButton from "./aboutButton";
 import Marquee from "react-easy-marquee";
+import VideoModal from "./VideoModel";
 
 const About = (props) => {
+  const [isFullscreen, setIsFullscreen] = useState(false);
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+
+  const openModal = () => {
+    setIsFullscreen(true);
+    setModalIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsFullscreen(false);
+    setModalIsOpen(false);
+  };
   return (
     <>
       <div id="about" className="   flex items-center lg:py-32 py-20 mx-auto">
@@ -14,9 +27,37 @@ const About = (props) => {
             <div className="mb-4 lg:w-[440px] lg:h-[460px]   w-72 h-72 drop-shadow-2xl shadow-white ">
               {" "}
               <Image src={AboutImg} className="absolute    " alt="/" />
-              {/* <Visual img={AboutImg} isLarge={true} bgImg={AboutImg} /> */}
             </div>
           </div>
+
+          {/* <div className="relative mb-0 lg:w-[420px] lg:h-[420px] w-72 h-72 drop-shadow-2xl shadow-white">
+            <video
+              src="Capsule.webm"
+              controls
+              className="w-full h-full object-cover"
+              ref={videoRef}
+              onClick={togglePlay}
+            ></video>
+            {!isPlaying && (
+              <div className="absolute inset-0 flex items-center justify-center">
+                <button
+                  className="w-20 h-20 text-white bg-[rgba(0,0,0,0.6)] rounded-full hover:bg-[#02CA82] transition duration-300"
+                  onClick={togglePlay}
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="50"
+                    height="50"
+                    fill="currentColor"
+                    className="bi bi-play-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M2 1.717A.5.5 0 0 1 2.5 1h11a.5.5 0 0 1 .5.717l-6 12a.5.5 0 0 1-.5.283h-.001a.5.5 0 0 1-.5-.282l-6-12z" />
+                  </svg>
+                </button>
+              </div>
+            )}
+          </div> */}
 
           <div className="lg:w-[503px] lg:ml-8 drop-shadow-2xl shadow-blue-500/50">
             <div className="flex ">
@@ -40,7 +81,7 @@ const About = (props) => {
 
             <div className="aboutbuttonsDiv lg:pt-2 pt-10 ml-0 drop-shadow-2xl shadow-blue-500/50  ">
               <Marquee
-                duration={6000}
+                duration={18000}
                 axis="X"
                 width="100%"
                 pauseOnHover={true}

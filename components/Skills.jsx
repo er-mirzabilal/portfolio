@@ -45,7 +45,7 @@ const Skills = () => {
         <div className="h-0.5 lg:w-[433px] lg:ml-4 mt-6 border border-[#F0F0F0] lg:visible invisible"></div>
       </div>
       <Marquee
-        duration={6000}
+        duration={15000}
         axis="X"
         width="100%"
         pauseOnHover={true}
@@ -56,7 +56,7 @@ const Skills = () => {
         ))}
       </Marquee>
       <Marquee
-        duration={9000}
+        duration={15000}
         axis="X"
         width="100%"
         pauseOnHover={true}

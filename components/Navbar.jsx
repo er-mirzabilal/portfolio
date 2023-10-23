@@ -51,7 +51,7 @@ const Navbar = () => {
             style={{ color: `${linkColor}` }}
             className="hidden items-baseline lg:flex"
           >
-            <li className="ml-10 text-sm uppercase ">
+            <li className="ml-10 text-sm uppercase">
               <ALink href="/#about">About</ALink>
             </li>
             <li className="ml-10 text-sm uppercase ">
