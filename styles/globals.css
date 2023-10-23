@@ -1,48 +1,49 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url("https://fonts.googleapis.com/css?family=Poppins");
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 
 html {
   scroll-behavior: smooth;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   background-color: #0a1322;
   margin: 0;
 }
 
 @layer base {
   body {
-    @apply text-[#ffff]
+    @apply text-[#ffff];
   }
 
   b {
-    @apply text-[#ffff]
+    @apply text-[#ffff];
   }
 
   h1 {
-    @apply text-8xl py-2 font-bold text-[#F0F0F0]
+    @apply text-8xl py-2 font-bold text-[#F0F0F0];
   }
 
   h2 {
-    @apply text-4xl text-[#02CA82] font-bold py-2
+    @apply text-4xl text-[#02CA82] font-bold py-2;
   }
 
   h5 {
-    @apply text-2xl font-normal py-2 text-[#F0F0F0]
+    @apply text-2xl font-normal py-2 text-[#F0F0F0];
   }
 
   h6 {
-    @apply text-[#02CA82] text-xl font-bold text-[#F0F0F0]
+    @apply text-[#02CA82] text-xl font-bold text-[#F0F0F0];
   }
 
   li {
-    @apply cursor-pointer
+    @apply cursor-pointer;
   }
 }
 
@@ -50,7 +51,7 @@ html {
 .dot {
   height: 15px;
   width: 15px;
-  background-color: #02CA82;
+  background-color: #02ca82;
   border-radius: 50%;
   display: inline-block;
   margin-left: 8px;
@@ -59,7 +60,7 @@ html {
 .smdot {
   height: 8px;
   width: 8px;
-  background-color: #02CA82;
+  background-color: #02ca82;
   border-radius: 50%;
   display: inline-block;
   margin-left: 8px;
@@ -81,9 +82,9 @@ html {
 }
 
 .resume-button {
-  color: #00DF8F;
+  color: #00df8f;
   background-color: transparent;
-  border: 1px solid #00DF8F;
+  border: 1px solid #00df8f;
   border-radius: var(--border-radius);
   padding: 0.75rem 2.5rem;
   line-height: 1;
@@ -103,7 +104,7 @@ svg {
 }
 
 .email-mainpage {
-  color: #00DF8F;
+  color: #00df8f;
   font-style: normal;
   font-weight: 700;
   font-size: 15px;
@@ -120,7 +121,7 @@ svg {
 .right-line-mainpage {
   width: 150px;
   height: 1px;
-  background: #00DF8F;
+  background: #00df8f;
   transform: rotate(90deg);
 }
 
@@ -136,18 +137,18 @@ svg {
   cursor: pointer;
   align-items: flex-start;
   padding: 4px 16px;
-  color: #00DF8F;
+  color: #00df8f;
   font-weight: bold;
   background: #122b50;
 }
 
 .active {
-  background-color: #02CA82;
+  background-color: #02ca82;
   color: darkkhaki;
 }
 
 .line {
-  border-top: 0.5px solid #F0F0F0;
+  border-top: 0.5px solid #f0f0f0;
 }
 
 image {
@@ -185,8 +186,6 @@ image {
 
 #html-spinner,
 #svg-spinner {
-
-
   transition-property: transform;
   animation-name: rotate;
   animation-duration: 2.2s;
@@ -214,13 +213,11 @@ image {
   }
 }
 
-
 /* Rest of page style*/
 body {
-
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
-  color: #393D3D;
+  color: #393d3d;
 }
 
 #container {
@@ -238,5 +235,14 @@ body {
   /* top:0px;
   left: 100px;
   margin-left:-104px; */
+}
 
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1); /* Add box shadow when sticky */
+  /* Add any other styles you want for your sticky Navbar */
 }

@@ -14,10 +14,10 @@ function MyApp({ Component, pageProps }) {
         />
       </Head>
 
-      {/* <Navbar /> */}
-      {/* <StickyMedia /> */}
+      <Navbar />
+      <StickyMedia />
       <Component {...pageProps} />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

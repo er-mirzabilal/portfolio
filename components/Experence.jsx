@@ -4,7 +4,7 @@ import { useState } from "react";
 import ALink from "./activeLink";
 
 const Experence = () => {
-  const [activeExp, setActiveExp] = useState("bayt");
+  const [activeExp, setActiveExp] = useState("zapta");
 
   return (
     <div id="Experence" className="  lg:py-32 py-20">
@@ -15,17 +15,18 @@ const Experence = () => {
 
       <div className=" flex gap-8 mt-14  lg:flex-row flex-col ">
         <div className=" ml-2 flex  flex-row lg:flex-col  h-fit font-bold  overflow-auto">
-          <div className="hover:bg-[#0EC98533]  hover:border-[#02CA82] w-max  lg:p-2 lg:px-6  px-2  lg:border-b-0    lg:border-l-4  border-b-4  border-[#ffff]">
-            <button
-              style={{ color: activeExp === "bayt" ? "#02CA82" : "white" }}
-              onClick={() => setActiveExp("bayt")}
-            >
-              {" "}
-              <li className=" list-none p-2 lg:space-y-3"> Bayt.com</li>
-            </button>
-          </div>
-
-          <div className="hover:bg-[#0EC98533]  hover:border-[#02CA82] w-max  lg:p-2 lg:px-6  px-2  lg:border-b-0    lg:border-l-4  border-b-4  border-[#ffff]">
+          <div
+            className={`
+            hover:bg-[#0EC98533]  hover:border-[#02CA82] 
+             lg:p-2 lg:px-6 px-2 lg:border-b-0 border-b-4  ${
+               activeExp === "zapta"
+                 ? "lg:border-l-4 border-[#02CA82] bg-[#0EC98533]"
+                 : "lg:border-l-4 border-[#ffff]"
+             }
+           
+            
+            `}
+          >
             <button
               style={{ color: activeExp === "zapta" ? "#02CA82" : "white" }}
               onClick={() => setActiveExp("zapta")}
@@ -35,7 +36,19 @@ const Experence = () => {
               </li>
             </button>
           </div>
-          <div className=" hover:bg-[#0EC98533]  hover:border-[#02CA82] lg:p-2 lg:px-6  px-2 lg:border-b-0    lg:border-l-4  border-b-4  border-[#ffff]">
+
+          <div
+            className={`
+            hover:bg-[#0EC98533]  hover:border-[#02CA82] 
+             lg:p-2 lg:px-6 px-2 lg:border-b-0 border-b-4  ${
+               activeExp === "gift"
+                 ? "lg:border-l-4 border-[#02CA82] bg-[#0EC98533]"
+                 : "lg:border-l-4 border-[#ffff]"
+             }
+           
+            
+            `}
+          >
             <button
               style={{ color: activeExp === "gift" ? "#02CA82" : "white" }}
               onClick={() => setActiveExp("gift")}
@@ -45,8 +58,40 @@ const Experence = () => {
               </li>
             </button>
           </div>
+          <div
+            className={`
+            hover:bg-[#0EC98533]  hover:border-[#02CA82] 
+             lg:p-2 lg:px-6 px-2 lg:border-b-0 border-b-4  ${
+               activeExp === "bayt"
+                 ? "lg:border-l-4 border-[#02CA82] bg-[#0EC98533]"
+                 : "lg:border-l-4 border-[#ffff]"
+             }
+           
+            
+            `}
+          >
+            <button
+              style={{
+                color: activeExp === "bayt" ? "#02CA82" : "white",
+              }}
+              onClick={() => setActiveExp("bayt")}
+            >
+              <li className=" list-none p-2 space-y-3">Bayt.com</li>
+            </button>
+          </div>
 
-          <div className="hover:bg-[#0EC98533]  hover:border-[#02CA82] lg:p-2 lg:px-6  px-2 lg:border-b-0    lg:border-l-4  border-b-4  border-[#ffff]">
+          <div
+            className={`
+            hover:bg-[#0EC98533]  hover:border-[#02CA82] 
+             lg:p-2 lg:px-6 px-2 lg:border-b-0 border-b-4  ${
+               activeExp === "google"
+                 ? "lg:border-l-4 border-[#02CA82] bg-[#0EC98533]"
+                 : "lg:border-l-4 border-[#ffff]"
+             }
+           
+            
+            `}
+          >
             <button
               style={{
                 color: activeExp === "google" ? "#02CA82" : "white",

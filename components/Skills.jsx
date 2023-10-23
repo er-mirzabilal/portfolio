@@ -30,7 +30,7 @@ const moreSkills = [
 
 const Skill = ({ name, logo }) => {
   return (
-    <div className="py-5 px-8 bg-[#0C1C34] mr-4 shadow-2xl cursor-pointer  rounded-2xl text-[#00DF8F] font-semibold flex justify-center gap-2 ">
+    <div className="py-5 px-8 bg-[#0C1C34] mr-4 shadow-2xl cursor-pointer  rounded-2xl text-[#00DF8F] hover:text-white  font-semibold flex justify-center gap-2 ">
       <Image src={logo} alt={name} width={24} height={24} />
       {name}
     </div>
@@ -41,7 +41,7 @@ const Skills = () => {
   return (
     <div className="shadow-2xl rounded-md p-4 mb-4">
       <div className="flex mb-16 ">
-        <h2 className="text-xl">Skills</h2>
+        <h2 className="text-xl  ">Skills</h2>
         <div className="h-0.5 lg:w-[433px] lg:ml-4 mt-6 border border-[#F0F0F0] lg:visible invisible"></div>
       </div>
       <Marquee
