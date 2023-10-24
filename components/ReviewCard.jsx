@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const ReviewCard = ({ review, reviewer, src }) => {
   return (
-    <div className="bg-[#0C1C34] shadow-2xl rounded-md p-4 mb-4 hover:shadow-2xl   hover:drop-shadow-[0_2px_5px_rgb(0,128,0)] ">
+    <div className="bg-[#0C1C34]  rounded-md p-4 mb-4 hover:shadow-2xl   hover:drop-shadow-[0_2px_5px_rgb(0,128,0)] shadow-lg shadow-cyan-500/50  ">
       <div>
         <Image src={src} className="absolute    " alt="/" />
       </div>

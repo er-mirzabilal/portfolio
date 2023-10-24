@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
+import CalendlyWidget from "./CalendlyWidget";
+import PlayButtonAnimation from "./PlayButtonLottie";
 
 const Contact = () => {
   return (
@@ -44,7 +46,7 @@ const Contact = () => {
           ></textarea>
         </div>
         <div className="lg:mx-6">
-          <button className="border-[#02CA82] border rounded-lg lg:w-[530px]  p-4 w-full mt-2 text-[#02CA82] font-bold">
+          <button className="border-[#02CA82] border rounded-lg lg:w-[530px]  p-4 w-full mt-2 text-[#02CA82] font-bold shadow-lg shadow-cyan-500/50  hover:border-white hover:text-white">
             Send{" "}
           </button>
         </div>
@@ -54,7 +56,7 @@ const Contact = () => {
             <a>
               <div className="rounded-full shadow-sm shadow-[#02CA82] lg:mt-16 p-4 cursor-pointer hover:scale-110 ease-in duration-100">
                 <HiOutlineChevronDoubleUp
-                  className="text-[#02CA82]"
+                  className="text-[#02CA82] hover:text-white"
                   size={30}
                 />
               </div>

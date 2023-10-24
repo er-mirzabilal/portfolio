@@ -8,6 +8,7 @@ import Main from "../components/main";
 import Projects from "../components/projects";
 import Skills from "../components/Skills";
 import Review from "../components/Review";
+import CalendlyWidget from "../components/CalendlyWidget";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Projects />
       <Review />
       <Blogs />
+      <CalendlyWidget />
       <Contact />
     </div>
   );

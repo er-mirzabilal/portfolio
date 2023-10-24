@@ -4,60 +4,46 @@ import AboutImg from "../public/assets/about.jpg";
 import AboutButton from "./aboutButton";
 import Marquee from "react-easy-marquee";
 import VideoModal from "./VideoModel";
+import PlayButtonAnimation from "./PlayButtonLottie";
 
 const About = (props) => {
-  const [isFullscreen, setIsFullscreen] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
   const [modalIsOpen, setModalIsOpen] = useState(false);
-
   const openModal = () => {
-    setIsFullscreen(true);
     setModalIsOpen(true);
   };
 
   const closeModal = () => {
-    setIsFullscreen(false);
     setModalIsOpen(false);
   };
+
+  const commonClasses =
+    "mb-4 lg:w-[440px] lg:h-[460px] w-72 h-72 drop-shadow-2xl shadow-white";
   return (
     <>
       <div id="about" className="   flex items-center lg:py-32 py-20 mx-auto">
         <div className=" flex   lg:flex-row flex-col ">
-          <div className="lg:h-[450px] lg:w-[450px]    m-auto shadow-xl flex lg:items-center  items-center relative justify-center  lg:justify-center ">
-            <div className="lg:w-[400px] lg:h-[400px]  lg:mt-0  w-72 h-72  ml-8 mt-4 shadow-xl flex items-center border lg:absolute absolute  border-[#ffff] justify-center lg:p-8 lg:hover:scale-105 lg:ease-in lg:duration-300"></div>
-            <div className="mb-4 lg:w-[440px] lg:h-[460px]   w-72 h-72 drop-shadow-2xl shadow-white ">
-              {" "}
-              <Image src={AboutImg} className="absolute    " alt="/" />
+          <div className="lg:h-[450px] lg:w-[450px] m-auto shadow-xl flex lg:items-center items-center relative justify-center lg:justify-center">
+            <div className="lg:w-[400px] lg:h-[400px] w-72 h-72 ml-8 mt-4 shadow-xl flex items-center border lg:absolute absolute border-[#ffff] justify-center lg:p-8 lg:hover:scale-105 lg:ease-in lg:duration-300"></div>
+            <div
+              className={`transition-delay hover-delay ${commonClasses} ${
+                isHovered && "hovered"
+              }`}
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+            >
+              <Image src={AboutImg} className="absolute" alt="/" />
+              <div
+                className={`w-${isHovered ? 15 : 14} h-${
+                  isHovered ? 15 : 14
+                } cursor-pointer absolute lg:bottom-9 lg:right-9 bottom-0 right-0`}
+                onClick={openModal}
+              >
+                <PlayButtonAnimation hover={isHovered ? true : false} />
+              </div>
             </div>
           </div>
-
-          {/* <div className="relative mb-0 lg:w-[420px] lg:h-[420px] w-72 h-72 drop-shadow-2xl shadow-white">
-            <video
-              src="Capsule.webm"
-              controls
-              className="w-full h-full object-cover"
-              ref={videoRef}
-              onClick={togglePlay}
-            ></video>
-            {!isPlaying && (
-              <div className="absolute inset-0 flex items-center justify-center">
-                <button
-                  className="w-20 h-20 text-white bg-[rgba(0,0,0,0.6)] rounded-full hover:bg-[#02CA82] transition duration-300"
-                  onClick={togglePlay}
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="50"
-                    height="50"
-                    fill="currentColor"
-                    className="bi bi-play-fill"
-                    viewBox="0 0 16 16"
-                  >
-                    <path d="M2 1.717A.5.5 0 0 1 2.5 1h11a.5.5 0 0 1 .5.717l-6 12a.5.5 0 0 1-.5.283h-.001a.5.5 0 0 1-.5-.282l-6-12z" />
-                  </svg>
-                </button>
-              </div>
-            )}
-          </div> */}
+          <VideoModal isOpen={modalIsOpen} onClose={closeModal} />
 
           <div className="lg:w-[503px] lg:ml-8 drop-shadow-2xl shadow-blue-500/50">
             <div className="flex ">
@@ -95,7 +81,6 @@ const About = (props) => {
                 <AboutButton text={"Android"} />
                 <AboutButton text={"PHP"} />
                 <AboutButton text={"Laravel"} />
-                {/* <br /> */}
               </Marquee>
             </div>
           </div>

@@ -36,7 +36,7 @@ const Main = () => {
             <span className="box-border inline-block lg:w-1 w-1 h-6 ml-2  bg-white  lg:h-8 animate-cursor will-change-transform"></span>
           </h2>
 
-          <div className="bg-[#0C1C34]  mt-4 p-2 px-6 border-l-4 border-[#ffff]">
+          <div className="bg-[#0C1C34]  mt-4 p-2 px-6 border-l-4 border-[#ffff] shadow-lg shadow-cyan-500/50">
             <h5
               className="animate__animated animate__bounce animate__slow hover:text-[#00df8f] lg:text-2xl text-base text-[#CCD7F7]"
               // class="animate__animated animate__bounce"
@@ -46,13 +46,11 @@ const Main = () => {
             </h5>
           </div>
 
-          <button className="resume-button hover:text-white hover:border hover:border-[#ffff] ">
+          <button className="resume-button hover:text-white hover:border hover:border-[#ffff] shadow-lg shadow-cyan-500/50 ">
             Resume{" "}
           </button>
         </div>
       </div>
-
-      {/* <div className="w-[440px] h-[370px] bg-[#0D1F3A]  absolute  rounded-full mt-[68px] ml-2"></div> */}
     </div>
   );
 };

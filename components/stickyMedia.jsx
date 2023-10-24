@@ -2,9 +2,9 @@ import Link from "next/link";
 const StickyMedia = () => {
   return (
     <div className="lg:visible  invisible ">
-      <div className="fixed bottom-20 z-10 flex flex-col flex-wrap right- p-6 ">
+      <div className="fixed bottom-20 z-10 flex flex-col flex-wrap right- p-6  ">
         <div className="right-side mb-8   mx-auto">
-          <div className="email-mainpage hover:text-white">
+          <div className="email-mainpage hover:text-white ">
             mirza.bilal.ahmad8@gmail.com
           </div>
         </div>

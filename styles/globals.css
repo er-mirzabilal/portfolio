@@ -176,7 +176,7 @@ image {
 }
 } */
 #html-spinner {
-  z-index: 10;
+  /* z-index: ; */
   width: 178px;
   height: 178px;
   border: 6px solid #a8e47e;

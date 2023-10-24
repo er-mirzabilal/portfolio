@@ -12,7 +12,7 @@ const Project = (props) => {
   return (
     <div id="projects" className="  flex flex-wrap  lg:py-32  py-20 ">
       <div className="flex lg:justify-center ">
-        <h2 className="text-xl">Some Things I’ve Built </h2>
+        <h2 className="text-xl ">Some Things I’ve Built </h2>
         <div className="h-0.5 lg:w-[433px] lg:ml-4 mt-6 border border-[#F0F0F0] lg:visible invisible"></div>
       </div>
 
@@ -138,8 +138,10 @@ const Project = (props) => {
 
         <OtherProject />
       </div>
-      <div className="flex  h-fit w-full justify-center">
-        <button className="resume-button text-sm  ">Show More </button>
+      <div className="flex  h-fit w-full justify-center ">
+        <button className="resume-button text-sm shadow-lg shadow-cyan-500/50  hover:border-white hover:text-white ">
+          Show More{" "}
+        </button>
       </div>
     </div>
   );

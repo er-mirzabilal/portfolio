@@ -61,7 +61,13 @@ const Navbar = () => {
               <ALink href="/#projects">Projects</ALink>
             </li>
             <li className="ml-10 text-sm uppercase ">
+              <ALink href="/#Review">Review</ALink>
+            </li>
+            <li className="ml-10 text-sm uppercase ">
               <ALink href="/#Blogs">Blogs</ALink>
+            </li>
+            <li className="ml-10 text-sm uppercase ">
+              <ALink href="/#Calendly">Calendly</ALink>
             </li>
 
             <li className="ml-10 text-sm uppercase    py-1 px-3   border-solid  border-2 border-[#02CA82]">
@@ -141,9 +147,19 @@ const Navbar = () => {
                   Projects
                 </li>
               </Link>
+              <Link href="/#Review">
+                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                  Review
+                </li>
+              </Link>
               <Link href="/#Blogs">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
                   Blogs
+                </li>
+              </Link>
+              <Link href="/#Calendly">
+                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                  Calendly
                 </li>
               </Link>
               <Link href="/#contact">
