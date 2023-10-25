@@ -6,7 +6,13 @@ import { AiOutlinePlayCircle } from "react-icons/ai";
 
 const PlayButtonAnimation = ({ hover }) => {
   return (
-    <div style={{ position: "relative", width: "100%", height: "100%" }}>
+    <div
+      style={{
+        position: "relative",
+        height: hover ? "100%" : "30%",
+        width: hover ? "100%" : "30%",
+      }}
+    >
       <Lottie animationData={playButtonAnimation} loop={true} autoplay={true} />
       <div
         style={{

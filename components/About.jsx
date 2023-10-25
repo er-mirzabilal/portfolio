@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import AboutImg from "../public/assets/about.jpg";
 import AboutButton from "./aboutButton";
@@ -34,9 +34,9 @@ const About = (props) => {
             >
               <Image src={AboutImg} className="absolute" alt="/" />
               <div
-                className={`w-${isHovered ? 15 : 14} h-${
-                  isHovered ? 15 : 14
-                } cursor-pointer absolute lg:bottom-9 lg:right-9 bottom-0 right-0`}
+                className={
+                  "cursor-pointer absolute lg:bottom-9 lg:right-9 bottom-0 right-0"
+                }
                 onClick={openModal}
               >
                 <PlayButtonAnimation hover={isHovered ? true : false} />
