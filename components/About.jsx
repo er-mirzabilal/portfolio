@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import AboutImg from "../public/assets/about.jpg";
+import AboutImg from "../public/assets/about.JPEG";
 import AboutButton from "./aboutButton";
 import Marquee from "react-easy-marquee";
 import VideoModal from "./VideoModel";
